@@ -47,7 +47,7 @@ The goal is to provide a reusable foundation that you can make your own.
 ### 1. Clone the repo
 
 ```bash
-git clone git@github.com:kunchenguid/dotfiles-mac-nix.git ~/github/dotfiles-mac-nix
+git clone git@github.com:mjr-88/dotfiles-mac-nix.git ~/github/dotfiles-mac-nix
 cd ~/github/dotfiles-mac-nix
 ```
 
