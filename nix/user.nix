@@ -44,8 +44,8 @@ in
     signing.format = null;
     settings = {
       user = {
-        name = "Michael Ralabate";
-        email = "email@mjr.rip";
+        name = "mjr-88";
+        email = "github@mjr.rip";
       };
       core.editor = "vim";
       color.ui = true;
