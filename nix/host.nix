@@ -11,11 +11,30 @@
     onActivation.cleanup = "zap";
     taps = [ ];
     brews = [
-      "autoconf"
+      "borders"
+      "btop"
+      "topgrade"
     ];
     casks = [
-      "wezterm"
-      "amethyst"
+      "adobe-creative-cloud"
+      "latest"
+      "aerospace"
+      "shottr"
+      "warp"
+      "aerospace"
+      "curseforge"
+      "modrinth"
+      "appcleaner"
+      "discord"
+      "nextcloud"
+      "bambu-studio"
+      "jordanbaird-ice"
+      "obsidian"
+      "topnotch"
+      "bitwarden"
+      "keyclu"
+      "rustdesk"
+      "visual-studio-code"
     ];
   };
 
@@ -23,9 +42,9 @@
     starship
   ];
 
-  system.primaryUser = "yourname";
-  users.users.yourname = {
-    home = "/Users/yourname";
+  system.primaryUser = "mjr";
+  users.users.mjr = {
+    home = "/Users/mjr";
     shell = pkgs.zsh;
   };
 
@@ -56,7 +75,7 @@
 
   environment.systemPath = [
     "/run/current-system/sw/bin"
-    "/etc/profiles/per-user/yourname/bin"
+    "/etc/profiles/per-user/mjr/bin"
   ];
 
   system.stateVersion = 6;
