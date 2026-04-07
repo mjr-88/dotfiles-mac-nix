@@ -17,24 +17,25 @@
     ];
     casks = [
       "adobe-creative-cloud"
-      "latest"
       "aerospace"
-      "shottr"
-      "warp"
-      "aerospace"
-      "curseforge"
-      "modrinth"
       "appcleaner"
-      "discord"
-      "nextcloud"
       "bambu-studio"
-      "jordanbaird-ice"
-      "obsidian"
-      "topnotch"
       "bitwarden"
+      "curseforge"
+      "discord"
+      "jordanbaird-ice"
       "keyclu"
+      "latest"
+      "modrinth"
+      "nextcloud"
+      "obsidian"
       "rustdesk"
+      "shottr"
+      "spotify"
+      "sublime-text"
+      "topnotch"
       "visual-studio-code"
+      "warp"
     ];
   };
 
@@ -53,7 +54,7 @@
       AppleInterfaceStyle = "Dark";
       KeyRepeat = 2;
       InitialKeyRepeat = 15;
-      "com.apple.swipescrolldirection" = false;
+      "com.apple.swipescrolldirection" = true;
       NSAutomaticCapitalizationEnabled = false;
       NSAutomaticPeriodSubstitutionEnabled = false;
       NSAutomaticSpellingCorrectionEnabled = false;
