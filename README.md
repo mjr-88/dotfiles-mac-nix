@@ -101,7 +101,7 @@ rebuild
 This alias is included in the shell config and expands to the repo path used in this guide:
 
 ```bash
-/run/current-system/sw/bin/darwin-rebuild switch --flake ~/github/dotfiles-mac-nix#mac
+sudo /run/current-system/sw/bin/darwin-rebuild switch --flake ~/github/dotfiles-mac-nix#mac --no-write-lock-file
 ```
 
 ## Where to add new tools

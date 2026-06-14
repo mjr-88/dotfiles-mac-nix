@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, username, homeDirectory, ... }:
 
 {
   # If you use Determinate Nix Installer (recommended), let it manage Nix itself.
@@ -9,7 +9,10 @@
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";
-    taps = [ ];
+    taps = [
+      "felixkratz/formulae"
+      "nikitabobko/tap"
+    ];
     brews = [
       "borders"
       "btop"
@@ -44,9 +47,9 @@
     starship
   ];
 
-  system.primaryUser = "mjr";
-  users.users.mjr = {
-    home = "/Users/mjr";
+  system.primaryUser = username;
+  users.users.${username} = {
+    home = homeDirectory;
     shell = pkgs.zsh;
   };
 
@@ -77,7 +80,7 @@
 
   environment.systemPath = [
     "/run/current-system/sw/bin"
-    "/etc/profiles/per-user/mjr/bin"
+    "/etc/profiles/per-user/${username}/bin"
   ];
 
   system.stateVersion = 6;

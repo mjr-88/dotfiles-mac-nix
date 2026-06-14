@@ -25,9 +25,9 @@ fi
 
 # Apply the Nix configuration
 if [ -x /run/current-system/sw/bin/darwin-rebuild ]; then
-  sudo /run/current-system/sw/bin/darwin-rebuild switch --flake "$DOTFILES_DIR#mac"
+  sudo /run/current-system/sw/bin/darwin-rebuild switch --flake "$DOTFILES_DIR#mac" --no-write-lock-file
 else
-  sudo nix run github:nix-darwin/nix-darwin -- switch --flake "$DOTFILES_DIR#mac"
+  sudo nix run github:nix-darwin/nix-darwin -- switch --flake "$DOTFILES_DIR#mac" --no-write-lock-file
 fi
 
 # Install nvm and a default Node.js if missing

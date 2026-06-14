@@ -1,11 +1,11 @@
-{ config, pkgs, ... }:
+{ config, pkgs, username, homeDirectory, ... }:
 
 let
-  dotfilesDir = "${config.home.homeDirectory}/github/dotfiles-mac-nix";
+  dotfilesDir = "${homeDirectory}/github/dotfiles-mac-nix";
 in
 {
-  home.username = "mjr";
-  home.homeDirectory = "/Users/mjr";
+  home.username = username;
+  home.homeDirectory = homeDirectory;
   home.stateVersion = "23.11";
   home.language.base = "en_US.UTF-8";
 
@@ -114,7 +114,7 @@ in
       reset = "git reset --soft HEAD^";
       rebasem = "git rebase -i main";
       rebasemst = "git rebase -i master";
-      rebuild = "root /run/current-system/sw/bin/darwin-rebuild switch --flake ~/github/dotfiles-mac-nix#mac";
+      rebuild = "sudo /run/current-system/sw/bin/darwin-rebuild switch --flake \"${dotfilesDir}#mac\" --no-write-lock-file";
     };
     initContent = ''
       bindkey '^f' autosuggest-accept
