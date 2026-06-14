@@ -114,7 +114,7 @@ in
       reset = "git reset --soft HEAD^";
       rebasem = "git rebase -i main";
       rebasemst = "git rebase -i master";
-      rebuild = "/run/current-system/sw/bin/darwin-rebuild switch --flake ~/github/dotfiles-mac-nix#mac";
+      rebuild = "root /run/current-system/sw/bin/darwin-rebuild switch --flake ~/github/dotfiles-mac-nix#mac";
     };
     initContent = ''
       bindkey '^f' autosuggest-accept
