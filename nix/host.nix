@@ -1,6 +1,11 @@
 { pkgs, username, homeDirectory, ... }:
 
 {
+
+  security.sudo.extraConfig = ''
+    ${username} ALL=(root) NOPASSWD: /run/current-system/sw/bin/darwin-rebuild, /nix/store/*/bin/darwin-rebuild
+  '';
+
   # If you use Determinate Nix Installer (recommended), let it manage Nix itself.
   nix.enable = false;
 
