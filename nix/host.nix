@@ -45,6 +45,7 @@
       "visual-studio-code"
       "warp"
       "firefox"
+      "battle-net"
     ];
   };
 
