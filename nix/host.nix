@@ -44,7 +44,7 @@
       "topnotch"
       "visual-studio-code"
       "warp"
-      "claude"
+      "firefox"
     ];
   };
 
