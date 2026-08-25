@@ -15,17 +15,17 @@
     enable = true;
     onActivation.cleanup = "zap";
     taps = [
-      "felixkratz/formulae"
+      "FelixKratz/formulae"
       "nikitabobko/tap"
     ];
     brews = [
-      "borders"
+      { name = "FelixKratz/formulae/borders"; trusted = true; }
       "btop"
       "topgrade"
     ];
     casks = [
       "adobe-creative-cloud"
-      "aerospace"
+      { name = "nikitabobko/tap/aerospace"; trusted = true; }
       "appcleaner"
       "bambu-studio"
       "bitwarden"
@@ -43,7 +43,7 @@
       "sublime-text"
       "topnotch"
       "visual-studio-code"
-      "warp"
+      "ghostty"
       "firefox"
       "battle-net"
     ];

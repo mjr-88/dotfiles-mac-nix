@@ -125,5 +125,7 @@ in
     ".config/wezterm".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesDir}/files/.config/wezterm";
 
     ".aerospace.toml".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesDir}/files/aerospace/aerospace.toml";
+
+    ".config/ghostty/config.ghostty".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesDir}/files/ghostty/config.ghostty";
   };
 }

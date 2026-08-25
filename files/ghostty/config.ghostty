@@ -1,0 +1,57 @@
+# Ghostty configuration
+# Docs: https://ghostty.org/docs/config
+# List every option + default:  ghostty +show-config --default --docs
+# See what's currently loaded:  ghostty +show-config
+
+# --- Fonts ---
+font-family = "Agave Nerd Font"
+font-size = 16
+# Slightly thicken font rendering (nice on low-DPI displays)
+font-thicken = false
+
+# --- Theme & colors ---
+# List all built-in themes: ghostty +list-themes
+theme = Ardoise
+# Use different themes for system light/dark mode:
+# theme = light:Builtin Solarized Light,dark:Birds Of Paradise
+background-opacity = 0.90
+# Blur what's behind the window (needs compositor support)
+background-blur = true
+# Minimum foreground/background contrast ratio (1 allows no contrast; 3 is more readable)
+minimum-contrast = 1
+
+# --- Cursor ---
+# block, bar, underline, block_hollow
+cursor-style = block_hollow
+cursor-style-blink = true
+
+# --- Window ---
+window-padding-x = 8
+window-padding-y = 8
+# Evenly balance padding on all sides
+window-padding-balance = true
+# auto, none, client, server
+window-decoration = auto
+# Reopen windows where they left off: default, never, always
+window-save-state = default
+# New windows/tabs start in the current directory
+window-inherit-working-directory = true
+
+# --- Behavior ---
+# Copy selected text to both Linux's primary selection and regular clipboard
+copy-on-select = clipboard
+# Ask before closing a window with a running process
+confirm-close-surface = true
+mouse-hide-while-typing = true
+# Scrollback buffer size in bytes
+scrollback-limit = 10000000
+# Shell integration powers title, working directory, and prompt tracking
+shell-integration = detect
+# Keep the configured cursor shape instead of forcing a bar at shell prompts
+shell-integration-features = no-cursor
+
+# --- Keybinds ---
+# Format: keybind = trigger=action
+# List all defaults: ghostty +list-keybinds
+keybind = ctrl+shift+enter=new_split:right
+keybind = ctrl+shift+r=reload_config
