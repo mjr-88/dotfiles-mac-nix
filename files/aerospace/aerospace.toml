@@ -81,7 +81,7 @@ automatically-unhide-macos-hidden-apps = false
 ########### the following lines are to launch applications
 
     alt-t = 'exec-and-forget open -a /Applications/"Sublime Text.app"'
-    alt-enter = 'exec-and-forget open -a /Applications/Warp.app'
+    alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
     alt-s = 'exec-and-forget open -a /Applications/Safari.app'
     alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
     alt-v = 'exec-and-forget open -a /Applications/Visual Studio Code.app'
