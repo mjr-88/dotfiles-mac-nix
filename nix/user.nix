@@ -35,7 +35,8 @@ in
   fonts.fontconfig.enable = true;
 
   home.sessionVariables = {
-    EDITOR = "vim";
+    EDITOR = "nvim";
+    VISUAL = "nvim";
   };
 
   programs.git = {
@@ -47,7 +48,7 @@ in
         name = "mjr-88";
         email = "github@mjr.rip";
       };
-      core.editor = "vim";
+      core.editor = "nvim";
       color.ui = true;
       push.autoSetupRemote = true;
       pull.rebase = true;
