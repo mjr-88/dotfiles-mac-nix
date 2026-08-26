@@ -58,5 +58,5 @@ keybind = ctrl+shift+r=reload_config
 
 
 # Sets Nano as the CLI Text Editor
-env = EDITOR=nano
-env = VISUAL=nano
+env = EDITOR=nvim
+env = VISUAL=nvim
