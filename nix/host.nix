@@ -22,7 +22,6 @@
       { name = "FelixKratz/formulae/borders"; trusted = true; }
       "btop"
       "topgrade"
-      "neovim"
     ];
     casks = [
       "adobe-creative-cloud"
@@ -51,7 +50,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    starship
   ];
 
   system.primaryUser = username;

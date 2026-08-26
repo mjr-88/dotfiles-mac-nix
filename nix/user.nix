@@ -35,9 +35,13 @@ in
   fonts.fontconfig.enable = true;
 
   home.sessionVariables = {
-    EDITOR = "nvim";
-    VISUAL = "nvim";
+    EDITOR = "nano";
+    VISUAL = "nano";
   };
+
+  home.sessionPath = [
+    "/opt/homebrew/bin"
+  ];
 
   programs.git = {
     enable = true;
@@ -48,7 +52,7 @@ in
         name = "mjr-88";
         email = "github@mjr.rip";
       };
-      core.editor = "nvim";
+      core.editor = "nano";
       color.ui = true;
       push.autoSetupRemote = true;
       pull.rebase = true;
@@ -116,6 +120,8 @@ in
       rebasem = "git rebase -i main";
       rebasemst = "git rebase -i master";
       rebuild = "sudo /run/current-system/sw/bin/darwin-rebuild switch --flake \"${dotfilesDir}#mac\" --no-write-lock-file";
+      vim = "nano";
+      vi = "nano";
     };
     initContent = ''
       bindkey '^f' autosuggest-accept
