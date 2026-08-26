@@ -4,7 +4,7 @@
 # See what's currently loaded:  ghostty +show-config
 
 # --- Fonts ---
-font-family = "Agave Nerd Font"
+font-family = "JetBrains Mono Regular"
 font-size = 16
 # Slightly thicken font rendering (nice on low-DPI displays)
 font-thicken = false
@@ -55,3 +55,8 @@ shell-integration-features = no-cursor
 # List all defaults: ghostty +list-keybinds
 keybind = ctrl+shift+enter=new_split:right
 keybind = ctrl+shift+r=reload_config
+
+
+# Sets Nano as the CLI Text Editor
+env = EDITOR=nano
+env = VISUAL=nano
