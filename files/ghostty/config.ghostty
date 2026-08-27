@@ -53,7 +53,37 @@ shell-integration-features = no-cursor
 # --- Keybinds ---
 # Format: keybind = trigger=action
 # List all defaults: ghostty +list-keybinds
+# --- Keybinds (splits, replacing tabs) ---
+
+# Create splits
 keybind = ctrl+shift+enter=new_split:right
+keybind = ctrl+shift+d=new_split:down
+
+# Navigate between splits (vim-style directions)
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:down
+keybind = ctrl+shift+k=goto_split:up
+keybind = ctrl+shift+l=goto_split:right
+
+# Cycle through splits without thinking about direction
+keybind = ctrl+shift+]=goto_split:next
+keybind = ctrl+shift+[=goto_split:previous
+
+# Resize the focused split
+keybind = ctrl+shift+left=resize_split:left,50
+keybind = ctrl+shift+right=resize_split:right,50
+keybind = ctrl+shift+up=resize_split:up,50
+keybind = ctrl+shift+down=resize_split:down,50
+
+# Reset all splits back to equal size
+keybind = ctrl+shift+equal=equalize_splits
+
+# Toggle the focused split to fill the whole window (like zooming a tmux pane)
+keybind = ctrl+shift+z=toggle_split_zoom
+
+# Close the focused split
+keybind = ctrl+shift+w=close_surface
+
 keybind = ctrl+shift+r=reload_config
 
 
