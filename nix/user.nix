@@ -122,7 +122,7 @@ in
       rebuild = "sudo /run/current-system/sw/bin/darwin-rebuild switch --flake \"${dotfilesDir}#mac\" --no-write-lock-file";
       vim = "nano";
       vi = "nano";
-      caddyfile = "code --remote ssh-remote+caddy /etc/caddy/Caddyfile";
+      caddyfile = "code --remote ssh-remote+caddy '/etc/caddy'";
       homepage = "code --remote ssh-remote+homepage /opt/homepage/config/";
       dotfiles = "code ~/github/dotfiles-mac-nix";
     };
