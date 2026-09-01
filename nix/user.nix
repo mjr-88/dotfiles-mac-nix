@@ -131,6 +131,8 @@ in
     '';
   };
 
+  
+
   home.file = {
     ".aerospace.toml".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesDir}/files/aerospace/aerospace.toml";
 

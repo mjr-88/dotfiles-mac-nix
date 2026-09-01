@@ -48,6 +48,7 @@
       "battle-net"
       "antinote"
       "fastrawviewer"
+      "vlc"
     ];
   };
 
