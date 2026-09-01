@@ -47,6 +47,7 @@
       "firefox"
       "battle-net"
       "antinote"
+      "fastrawviewer"
     ];
   };
 
